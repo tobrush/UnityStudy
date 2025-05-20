@@ -48,7 +48,16 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        velocity = ((transform.forward * vertical) + (transform.right * horizontal)) * Time.fixedDeltaTime * walkSpeed;
+        // velocity = ((transform.forward * vertical) + (transform.right * horizontal)) * Time.fixedDeltaTime * walkSpeed;
+        // transform.Translate(velocity, Space.World);
+
+        Vector3 inputDirection = new Vector3(horizontal, 0, vertical);
+
+        // 정규화해서 대각선 속도 보정
+        if (inputDirection.sqrMagnitude > 1f)
+            inputDirection.Normalize();
+
+        velocity = inputDirection * walkSpeed * Time.fixedDeltaTime;
         transform.Translate(velocity, Space.World);
     }
 }
