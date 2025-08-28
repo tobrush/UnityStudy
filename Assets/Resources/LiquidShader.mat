@@ -100,7 +100,7 @@ Material:
     - _AlphaToMask: 0
     - _Blend: 0
     - _BlendModePreserveSpecular: 1
-    - _BobX: 0.004583451
+    - _BobX: NaN
     - _BobZ: NaN
     - _BumpScale: 1
     - _ClearCoatMask: 0
