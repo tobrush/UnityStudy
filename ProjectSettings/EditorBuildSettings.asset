@@ -6,8 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 99c9720ab356a0642a771bea13969a05
+    path: Assets/Scenes/MiddleLevel/FarmGameIntro.unity
+    guid: 23fed76b51f353846a59a0169ba4ff30
+  - enabled: 1
+    path: Assets/Scenes/MiddleLevel/FarmGameCharacter.unity
+    guid: dadd8be5dd60c6941ad805eb748444b6
+  - enabled: 1
+    path: Assets/Scenes/MiddleLevel/FarmGame.unity
+    guid: a0a7dde581ae22d4aabb59e0e335206e
   m_configObjects:
+    com.unity.input.settings: {fileID: 11400000, guid: 7a48854be9877ba4888aa0bb1046c776, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0
